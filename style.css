@@ -33,11 +33,19 @@
 .carousel__cards--card__pic {
   width: 26rem;
   height: 25rem;
+
+  overflow: hidden;
+  border-radius: 1rem;
 }
 
 .carousel__cards--card__pic img {
   object-position: center;
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
+  transition: all 0.5s ease-in-out;
+}
+
+.carousel__cards--card__pic:hover img {
+  transform: scale(1.1);
 }
 
 .carousel__cards--card__icons {
@@ -64,7 +72,8 @@
   padding: 2px;
   border-radius: 0.4rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 
   gap: 0.3rem;
 }
