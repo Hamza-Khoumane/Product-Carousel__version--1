@@ -1,0 +1,98 @@
+.carousel {
+  margin-top: 20rem;
+  padding: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  gap: 4rem;
+}
+
+.carousel__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.carousel__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.carousel__cards--card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  position: relative;
+}
+
+.carousel__cards--card__pic {
+  width: 26rem;
+  height: 25rem;
+}
+
+.carousel__cards--card__pic img {
+  object-position: center;
+  border-radius: 1rem;
+}
+
+.carousel__cards--card__icons {
+  position: absolute;
+  top: 60%;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.carousel__cards--card__icons i {
+  background-color: lightgray;
+  padding: 0.6rem;
+  border-radius: 50%;
+}
+
+.carousel__cards--card__new,
+.carousel__cards--card__hot {
+  position: absolute;
+  top: 2%;
+  right: 6%;
+  color: white;
+  padding: 2px;
+  border-radius: 0.4rem;
+  display: flex;
+  justify-content: space-between;
+
+  gap: 0.3rem;
+}
+
+.carousel__cards--card__hot {
+  background-color: orangered;
+}
+
+.carousel__cards--card__new {
+  background-color: green;
+}
+
+.left {
+  position: absolute;
+  left: -2rem;
+  top: 41%;
+
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.right {
+  position: absolute;
+  right: -2rem;
+  top: 41%;
+
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 50%;
+}
